@@ -3,7 +3,7 @@
 # Detects files with unexpected execute permissions.
 # Allowed patterns configurable via LEFTHOOK_EXECUTE_PERMISSIONS_ALLOWED env var.
 # Usage: lefthook-execute-permissions file1 [file2 ...]
-# NOTE: sourced by writeShellApplication — no shebang or set needed.
+# NOTE: sourced by writeShellApplication - no shebang or set needed.
 
 if [ $# -eq 0 ]; then
     exit 0
