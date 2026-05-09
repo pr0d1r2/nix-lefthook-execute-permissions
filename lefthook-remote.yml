@@ -1,0 +1,10 @@
+---
+pre-commit:
+  commands:
+    execute-permissions:
+      run: timeout ${LEFTHOOK_EXECUTE_PERMISSIONS_TIMEOUT:-30} lefthook-execute-permissions {staged_files}
+
+pre-push:
+  commands:
+    execute-permissions:
+      run: timeout ${LEFTHOOK_EXECUTE_PERMISSIONS_TIMEOUT:-30} lefthook-execute-permissions {push_files}
